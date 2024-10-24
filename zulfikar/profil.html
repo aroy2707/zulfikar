@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Saya</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .profile-header {
+      background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+      padding: 100px 0 50px;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+    }
+
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgb(255, 255, 255);
+      color: #0d6efd;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 5px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+      height: 100%;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill-badge {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+      margin: 5px;
+      border-radius: 20px;
+      background-color: #e9efee;
+    }
+
+    .progress {
+      height: 10px;
+      border-radius: 5px;
+    }
+
+    .contact-info i {
+      width: 30px;
+      color: #0d6efd;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: rgb(0, 255, 98);">Aroy.27</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profil.html">PROFIL</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              others
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="contact.html">kontak</a></li>
+              <li><a class="dropdown-item" href="daftar.html">daftar</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="galeri.html">Galerykami</a></li>
+            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">login</a>
+          </li>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <div class="profile-header text-center">
+    <img src="IMG-20240714-WA0043.jpg" alt="Foto Profil" class="profile-img mb-4">
+    <h1 class="display-5 fw-bold">zulfikar aroy</h1>
+    <p class="lead">Web Developer & UI/UX Designer</p>
+    <div class="social-links mt-3">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+      <!-- About Me Section -->
+      <div class="col-lg-8">
+        <div class="card info-card mb-4">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Tentang Saya</h3>
+            <p class="card-text">
+              Saya adalah seorang web developer dengan pengalaman 1 tahun dalam mengembangkan
+              aplikasi web modern. Fokus utama saya adalah menciptakan pengalaman pengguna yang intuitif
+              dan responsif dengan menggunakan teknologi terkini.
+            </p>
+            <div class="mt-4">
+              <h4 class="mb-3">Keahlian</h4>
+              <span class="skill-badge">HTML5</span>
+              <span class="skill-badge">CSS3</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="card info-card">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Pengalaman Kerja</h3>
+            <div class="timeline">
+              <div class="mb-4">
+                <h5>Senior Web Developer</h5>
+
+                <p>Memimpin tim pengembangan untuk proyek-proyek web skala besar dan implementasi
+                  fitur-fitur baru menggunakan teknologi modern.</p>
+              </div>
+              <div class="mb-4">
+                <h5>Web Developer</h5>
+
+                <p>Mengembangkan dan memelihara website klien menggunakan berbagai framework dan CMS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <!-- Contact Info -->
+        <div class="card info-card mb-4">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Informasi Kontak</h3>
+            <div class="contact-info">
+              <p><i class="fas fa-envelope"></i> zulfikararoy@gmail.com</p>
+              <p><i class="fas fa-phone"></i> +62 895 3514 01642</p>
+              <p><i class="fas fa-map-marker-alt"></i> Kaimana,West Papua, Indonesia</p>
+              <p><i class="fas fa-globe"></i> www.zulfikararoy.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Progress -->
+        <div class="card info-card">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Kemampuan</h3>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-2">
+                <span>HTML/CSS</span>
+                <span>50%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-2">
+                <span>JavaScript</span>
+                <span>50%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-2">
+                <span>React</span>
+                <span>50%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 50%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
